@@ -1,4 +1,9 @@
 # Demo
+![](https://github.com/haibuinam/Crafting-system/blob/main/Demo/Crafting.gif)
+![](https://github.com/haibuinam/Crafting-system/blob/main/Demo/FindItemByNameAndSwapItem.gif)
+![](https://github.com/haibuinam/Crafting-system/blob/main/Demo/SortAndFilterResults.gif)
+
+
 # Crafting-system
 This repository contains the code I made for Crafting-system using Unreal Engine 5.
 # Algorithms and Data Structures
