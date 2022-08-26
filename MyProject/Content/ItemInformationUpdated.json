@@ -1,0 +1,407 @@
+{
+	"Food" : 
+	[
+		{
+			"DataName" : "Boar",
+			"Date" : "2021.01.05-00.00.00",
+			"HealthToHeal" : "500",
+			"ItemID" : "5",
+			"ItemPrice" : "5000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Boar.png",
+			"Type" : "Food"
+		},
+		{
+			"DataName" : "Crab",
+			"Date" : "2019.03.01-10.05.00",
+			"HealthToHeal" : "300",
+			"ItemID" : "30",
+			"ItemPrice" : "3000",
+			"Rarity" : "Outstanding",
+			"Thumbnail" : "Crab.png",
+			"Type" : "Food"
+		},
+		{
+			"DataName" : "Energy Drink",
+			"Date" : "2020.01.05-00.00.00",
+			"HealthToHeal" : "200",
+			"ItemID" : "2",
+			"ItemPrice" : "2000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Energy Drink.png",
+			"Type" : "Food"
+		},
+		{
+			"DataName" : "Heart",
+			"Date" : "2019.03.01-10.05.05",
+			"HealthToHeal" : "400",
+			"ItemID" : "4",
+			"ItemPrice" : "4000",
+			"Rarity" : "Ultra Rare",
+			"Thumbnail" : "Heart.png",
+			"Type" : "Food"
+		},
+		{
+			"DataName" : "Magic Potion",
+			"Date" : "2019.01.05-00.00.00",
+			"HealthToHeal" : "100",
+			"ItemID" : "1",
+			"ItemPrice" : "1000",
+			"Rarity" : "Normal",
+			"Thumbnail" : "Magic Potion.png",
+			"Type" : "Food"
+		},
+		{
+			"DataName" : "Poison",
+			"Date" : "2022.02.03-00.00.00",
+			"HealthToHeal" : "600",
+			"ItemID" : "6",
+			"ItemPrice" : "6000",
+			"Rarity" : "Normal",
+			"Thumbnail" : "Poison.png",
+			"Type" : "Food"
+		}
+	],
+	"ItemBase" : 
+	[
+		{
+			"DataName" : "Alloy",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "10",
+			"ItemPrice" : "100",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Alloy.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Bamboo",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "11",
+			"ItemPrice" : "110",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Bamboo.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Blue Liquid",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "4",
+			"ItemPrice" : "40",
+			"Rarity" : "Good",
+			"Thumbnal" : "Blue Liquid.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Blue Shard",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "12",
+			"ItemPrice" : "120",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Blue Shard.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Blue Tail",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "13",
+			"ItemPrice" : "130",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Blue Tail.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Brain",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "14",
+			"ItemPrice" : "140",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Brain.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Brown Cloth",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "15",
+			"ItemPrice" : "150",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Brown Cloth.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Eye",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "1",
+			"ItemPrice" : "10",
+			"Rarity" : "Good",
+			"Thumbnal" : "Eye.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Flash Wing",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "16",
+			"ItemPrice" : "160",
+			"Rarity" : "Outstanding",
+			"Thumbnal" : "Flash Wing.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Gun Powder",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "17",
+			"ItemPrice" : "170",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Gun Powder.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Horn",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "7",
+			"ItemPrice" : "70",
+			"Rarity" : "Good",
+			"Thumbnal" : "Horn.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Iron",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "18",
+			"ItemPrice" : "180",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Iron.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Poison",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "6",
+			"ItemPrice" : "60",
+			"Rarity" : "Good",
+			"Thumbnal" : "Poison.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Red Shard",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "19",
+			"ItemPrice" : "190",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Red Shard.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Ring",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "20",
+			"ItemPrice" : "200",
+			"Rarity" : "Outstanding",
+			"Thumbnal" : "Ring.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Shell",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "21",
+			"ItemPrice" : "210",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Shell.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Spice",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "8",
+			"ItemPrice" : "80",
+			"Rarity" : "Legendary",
+			"Thumbnal" : "Spice.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Stick",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "22",
+			"ItemPrice" : "220",
+			"Rarity" : "Outstanding",
+			"Thumbnal" : "Stick.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Tail",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "2",
+			"ItemPrice" : "20",
+			"Rarity" : "Good",
+			"Thumbnal" : "Tail.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Tooth",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "23",
+			"ItemPrice" : "230",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Tooth.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Water Ball",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "3",
+			"ItemPrice" : "30",
+			"Rarity" : "Good",
+			"Thumbnal" : "Water Ball.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Wood",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "24",
+			"ItemPrice" : "240",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Wood.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Yellow Feather",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "25",
+			"ItemPrice" : "250",
+			"Rarity" : "Normal",
+			"Thumbnal" : "Yellow Feather.png",
+			"Type" : "ItemBase"
+		},
+		{
+			"DataName" : "Yellow Liquid",
+			"Date" : "2021.01.05-00.00.00",
+			"ItemID" : "5",
+			"ItemPrice" : "50",
+			"Rarity" : "Good",
+			"Thumbnal" : "Yellow Liquid.png",
+			"Type" : "ItemBase"
+		}
+	],
+	"Weapon" : 
+	[
+		{
+			"DameOfAxe" : "800",
+			"DataName" : "Amulet",
+			"Date" : "2022.06.02-00.00.00",
+			"ItemID" : "80",
+			"ItemPrice" : "28000",
+			"Rarity" : "Legendary",
+			"Thumbnail" : "Amulet.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "400",
+			"DataName" : "Bomb",
+			"Date" : "2019.03.01-10.15.00",
+			"ItemID" : "40",
+			"ItemPrice" : "12000",
+			"Rarity" : "Normal",
+			"Thumbnail" : "Bomb.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "1200",
+			"DataName" : "Death Necklace",
+			"Date" : "2022.02.01-00.00.00",
+			"ItemID" : "120",
+			"ItemPrice" : "32000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Death Necklace.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "1100",
+			"DataName" : "Evil Drum",
+			"Date" : "2022.01.10-00.00.00",
+			"ItemID" : "110",
+			"ItemPrice" : "31000",
+			"Rarity" : "Normal",
+			"Thumbnail" : "Evil Drum.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "1000",
+			"DataName" : "Fire Bomb",
+			"Date" : "2022.01.01-00.00.00",
+			"ItemID" : "100",
+			"ItemPrice" : "30000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Fire Bomb.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "900",
+			"DataName" : "Flash Bomb",
+			"Date" : "2022.07.03-00.00.00",
+			"ItemID" : "90",
+			"ItemPrice" : "29000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Flash Bomb.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "500",
+			"DataName" : "Fork",
+			"Date" : "2019.03.01-11.05.00",
+			"ItemID" : "50",
+			"ItemPrice" : "24000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Fork.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "200",
+			"DataName" : "Lock Pick",
+			"Date" : "2020.08.01-10.05.00",
+			"ItemID" : "20",
+			"ItemPrice" : "21000",
+			"Rarity" : "Masterpiece",
+			"Thumbnail" : "Lock Pick.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "100",
+			"DataName" : "Mace",
+			"Date" : "2019.03.01-10.05.15",
+			"ItemID" : "10",
+			"ItemPrice" : "22000",
+			"Rarity" : "Outstanding",
+			"Thumbnail" : "Mace.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "300",
+			"DataName" : "Magic Flute",
+			"Date" : "2020.06.01-10.05.00",
+			"ItemID" : "30",
+			"ItemPrice" : "25000",
+			"Rarity" : "Legendary",
+			"Thumbnail" : "Magic Flute.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "600",
+			"DataName" : "Pipe",
+			"Date" : "2022.08.22-00.00.00",
+			"ItemID" : "60",
+			"ItemPrice" : "26000",
+			"Rarity" : "Good",
+			"Thumbnail" : "Pipe.png",
+			"Type" : "Weapon"
+		},
+		{
+			"DameOfAxe" : "700",
+			"DataName" : "Sickle",
+			"Date" : "2022.07.02-00.00.00",
+			"ItemID" : "70",
+			"ItemPrice" : "27000",
+			"Rarity" : "Normal",
+			"Thumbnail" : "Sickle.png",
+			"Type" : "Weapon"
+		}
+	]
+}

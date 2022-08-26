@@ -1,0 +1,190 @@
+#include <fstream>
+#include <cstdlib>
+#include <sstream>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <stdlib.h>
+#include <iostream>
+#include <cppconn/driver.h>
+#include <cppconn/exception.h>
+#include <cppconn/prepared_statement.h>
+#include <json/json.h>
+#include<json/writer.h>
+
+using namespace std;
+
+//for demonstration only. never save password in the code
+const string server = "tcp://127.0.0.1:3306";
+const string username = "root";
+const string password = "root";
+
+bool CheckTableModifided_food()
+{
+    string line;
+    fstream  fileCheck;
+    unsigned long long NumberOfColumns {};
+    fileCheck.open("CompareColumns.txt", ios::in);
+
+    while (getline(fileCheck, line))
+    {
+        //get number of rows in previous session
+        NumberOfColumns = stoi(line);
+    }
+
+    sql::Driver* driverCheck;
+    sql::Connection* conCheck;
+    sql::Statement* stmtCheck;
+
+    try
+    {
+        driverCheck = get_driver_instance();
+        conCheck = driverCheck->connect(server, username, password);
+    }
+    catch (sql::SQLException e)
+    {
+        cout << "Could not connect to server. Error message: " << e.what() << endl;
+        system("pause");
+        exit(1);
+    }
+
+    conCheck->setSchema("db");
+    stmtCheck = conCheck->createStatement();
+
+    sql::ResultSet* ResNumberOfColumns = stmtCheck->executeQuery("SELECT * FROM modified_food ");
+    unsigned long long NumberCurrent{};
+
+    //get number of columns
+    ResNumberOfColumns->last();
+    NumberCurrent = ResNumberOfColumns->getRow();
+    if(NumberOfColumns==NumberCurrent)
+    {
+        return false;
+    }
+
+    fileCheck.close();
+
+    //save number of columns to file txt;
+    fileCheck.open("CompareColumns.txt", ios::out);
+    fileCheck << NumberCurrent;
+
+    delete conCheck;
+    return true;
+}
+
+int main()
+{
+    //if number in file check != number current columns in the table -> update;
+    if(!CheckTableModifided_food())
+    {
+        cout << "nothing to update";
+        return 0;
+    }
+
+    ofstream myfile;
+    myfile.open("C:/Users/Hai Bui Nam/Desktop/mmorpg_front/MyProject/Content/ItemInformation.json");
+
+    sql::Driver* driver;
+    sql::Connection* con;
+    sql::Statement* stmt;
+    //sql::PreparedStatement* pstmt;
+
+    try
+    {
+        driver = get_driver_instance();
+        con = driver->connect(server, username, password);
+    }
+    catch (sql::SQLException e)
+    {
+        cout << "Could not connect to server. Error message: " << e.what() << endl;
+        system("pause");
+        exit(1);
+    }
+
+    //use database: db
+    con->setSchema("db");
+    stmt = con->createStatement();
+
+    //get all name columns of table
+    vector<string> NameColumns;
+    sql::ResultSet* ResNameColumns = stmt->executeQuery("SHOW COLUMNS FROM food");
+    while (ResNameColumns->next()) {
+        NameColumns.push_back(ResNameColumns->getString("Field"));
+    }
+
+    Json::Value eventTest;
+    Json::Value vecObj(Json::arrayValue);
+
+        sql::ResultSet* res = stmt->executeQuery("SELECT * from food");
+        
+        while (res->next())
+        {
+            //Json::Value vecObj45(Json::arrayValue);
+                Json::Value Object;
+                for (auto a : NameColumns)
+                {
+                    string temp = res->getString(a);
+                    Object[a] = temp;
+                }
+                vecObj.append(Json::Value(Object));
+                eventTest["Food"] = vecObj;
+        }
+
+        //WEAPON
+        vector<string> WeaponNameColumns;
+        sql::ResultSet* ResWeaponNameColumns = stmt->executeQuery("SHOW COLUMNS FROM weapon");
+        while (ResWeaponNameColumns->next()) {
+            WeaponNameColumns.push_back(ResWeaponNameColumns->getString("Field"));
+        }
+
+        Json::Value vecObjWeapon(Json::arrayValue);
+
+        sql::ResultSet* ResWeapon = stmt->executeQuery("SELECT * from weapon");
+
+        while (ResWeapon->next())
+        {
+            Json::Value Object;
+            for (auto a : WeaponNameColumns)
+            {
+                string temp = ResWeapon->getString(a);
+                Object[a] = temp;
+            }
+            vecObjWeapon.append(Json::Value(Object));
+            eventTest["Weapon"] = vecObjWeapon;
+        }
+
+        //ItemBase
+        vector<string> ItemBaseNameColumns;
+        sql::ResultSet* ResItemBaseNameColumns = stmt->executeQuery("SHOW COLUMNS FROM itembase");
+        while (ResItemBaseNameColumns->next()) {
+            ItemBaseNameColumns.push_back(ResItemBaseNameColumns->getString("Field"));
+        }
+
+        Json::Value vecObjItemBase(Json::arrayValue);
+
+        sql::ResultSet* ResItemBase = stmt->executeQuery("SELECT * from itembase");
+
+        while (ResItemBase->next())
+        {
+            Json::Value Object;
+            for (auto a : ItemBaseNameColumns)
+            {
+                string temp = ResItemBase->getString(a);
+                Object[a] = temp;
+            }
+            vecObjItemBase.append(Json::Value(Object));
+            eventTest["ItemBase"] = vecObjItemBase;
+        }
+
+
+    std::cout << eventTest << std::endl;
+
+    myfile << eventTest;
+    myfile.close();
+
+    //delete pstmt;
+    delete con;
+    system("pause");
+    return 0;
+}
