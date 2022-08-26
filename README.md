@@ -3,13 +3,13 @@
 
 
 <p align="center">
-<img src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/SortAndFilterResults.gif" width=60% height=60%>
+<img src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/Crafting.gif" width=70% height=70%>
 </p>
 
 <p align="center">
-  <img alt="Light" src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/Crafting.gif" width="45%" width="45%">
+  <img alt="Light" src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/FindItemByNameAndSwapItem.gif" width="45%" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/Crafting.gif" width="45%" width="45%">
+  <img alt="Dark" src="https://github.com/haibuinam/Crafting-system/blob/main/Demo/SortAndFilterResults.gif" width="45%" width="45%">
 </p>
 
 # Crafting-system
