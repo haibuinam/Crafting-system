@@ -14,5 +14,6 @@ Sickle\\%1%Iron\\%1%Wood\\%3%Alloy
 Amulet\\%2%Red Ribbon\\%2%Green Shard\\%4%Iron
 Flash Bomb\\%1%Gun Powder\\%1%Iron\\%2%Flash Wing
 Fire Bomb\\%1%Gun Powder\\%1%Iron\\%2%Red Shard
+
 Evil Drum\\%2%Alloy\\%3%Wood\\%1%Brain\\%1%Yellow Feather
 Death Necklace\\%2%Tail\\%4%Tooth\\%1%Brown Cloth
