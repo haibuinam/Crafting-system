@@ -14,7 +14,7 @@
 
 # Crafting-system
 This repository contains the code I made for Crafting-system using Unreal Engine 5.
-# Algorithms and Data Structures
+# Algorithms and Data Structures (STL)
 1. Map: to find the crafting recipe for all items.
 2. Set: to save recipes for all items (Each item has its own recipe)
 3. Regex: to get number when the user enters input (even if they mistyped the syntax)
