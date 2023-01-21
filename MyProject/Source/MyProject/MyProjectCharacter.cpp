@@ -14,6 +14,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "InventorySystem/Inventory/InventoryComponent.h"
 #include "InventorySystem/Item/ItemBase.h"
+#include <AbilitySystemComponent.h>
 
 //////////////////////////////////////////////////////////////////////////
 // AMyProjectCharacter
@@ -58,6 +59,13 @@ AMyProjectCharacter::AMyProjectCharacter()
     Crafting = CreateDefaultSubobject<UCraftingComponent>("Crafting");
     // Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
     // are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+          // Initialize GAS related components
+    AbilitySystemComponent = CreateDefaultSubobject<UGAS_AbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+    AbilitySystemComponent->SetIsReplicated(true);
+    AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
+    Attributes = CreateDefaultSubobject<UGAS_AttributeSet>(TEXT("Attributes"));
+
 }
 
 void AMyProjectCharacter::UseItem(AItemBase* Item)
@@ -70,6 +78,11 @@ void AMyProjectCharacter::UseItem(AItemBase* Item)
     {
         V_LOG("Item is Null");
     }
+}
+
+UAbilitySystemComponent* AMyProjectCharacter::GetAbilitySystemComponent() const
+{
+    return AbilitySystemComponent;
 }
 
 //////////////////////////////////////////////////////////////////////////

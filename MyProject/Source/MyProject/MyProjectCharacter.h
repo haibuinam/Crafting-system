@@ -12,11 +12,17 @@
 #include "InventorySystem/Widget/HUDCrafting_WC.h"
 
 #include "InventorySystem/Widget/Circle_With8Item_Crafting_WC.h"
+
+// GAS includes
+#include "AbilitySystemInterface.h"
+#include "Public/GAS/GAS_AbilitySystemComponent.h"
+#include "Public/GAS/Attribute/GAS_AttributeSet.h"
+
 #include "MyProjectCharacter.generated.h"
 
 
 UCLASS(config=Game)
-class AMyProjectCharacter : public ACharacter
+class AMyProjectCharacter : public ACharacter, public IAbilitySystemInterface
 {
     GENERATED_BODY()
 
@@ -125,4 +131,15 @@ public:
     /** Handle Item */
     UFUNCTION(BlueprintCallable, Category="Inventory")
     void UseItem(class AItemBase* Item);
+
+public:
+    /*----- GAS  -----*/
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
+    class UGAS_AbilitySystemComponent* AbilitySystemComponent;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
+    class UGAS_AttributeSet* Attributes;
+
+    //from class ability system interface
+    virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 };
