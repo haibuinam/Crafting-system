@@ -60,8 +60,11 @@ AMyProjectCharacter::AMyProjectCharacter()
     // Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
     // are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
-          // Initialize GAS related components
+
+    // Initialize GAS related components
     AbilitySystemComponent = CreateDefaultSubobject<UGAS_AbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+
+    //Enable replication
     AbilitySystemComponent->SetIsReplicated(true);
     AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
     Attributes = CreateDefaultSubobject<UGAS_AttributeSet>(TEXT("Attributes"));

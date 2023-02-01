@@ -53,6 +53,7 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
     mutable bool bIsInventoryOpen = false;
 
+    //should delete property because we have GAS_Attribute set
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
     float Health = CHARACTER_HEALTH_DEFAULT;
 
@@ -140,6 +141,8 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "GAS")
     class UGAS_AttributeSet* Attributes;
 
-    //from class ability system interface
+    //from class ability system interface (define to use the GAS)
     virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+
+    virtual void InitializeAttributes();
 };
