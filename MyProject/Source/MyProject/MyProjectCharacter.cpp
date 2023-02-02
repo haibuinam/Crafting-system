@@ -88,6 +88,27 @@ UAbilitySystemComponent* AMyProjectCharacter::GetAbilitySystemComponent() const
     return AbilitySystemComponent;
 }
 
+//void AMyProjectCharacter::InitializeAttributes()
+//{
+//    if (AbilitySystemComponent && DefaultAttributeEffect) {
+
+        //Create an EffectContext for the owner of this AbilitySystemComponent
+//        FGameplayEffectContextHandle EffectContext = AbilitySystemComponent->MakeEffectContext();
+
+        //Set context this effect was create from
+//        EffectContext.AddSourceObject(this);
+
+        //Create an outgoing effect spec using the effect to apply and the context
+//        FGameplayEffectSpecHandle SpecHandle = AbilitySystemComponent->MakeOutgoingSpec(DefaultAttributeEffect, 1, EffectContext);
+
+//        if (SpecHandle.IsValid()) {
+            /** Applies a previously created gameplay effect spec to this component */
+//            FActiveGameplayEffectHandle GEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
+//        }
+//    }
+
+//}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 

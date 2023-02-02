@@ -144,5 +144,15 @@ public:
     //from class ability system interface (define to use the GAS)
     virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
-    virtual void InitializeAttributes();
+//    virtual void InitializeAttributes();
+    // Use gameplayEffect for init attribute
+    // Use TSubclassOf for blueprint show a list only classes derived from "UGameplayEffect"
+//    UPROPERTY(BlueprintReadOnly, EditDefaultOnly, Category = "GAS")
+//    TSubclassOf<class UGameplayEffect> DefaultAttributeEffect;
+
+
+    // Overload to initialize abilities for GAS, and component to store default abilities
+//    virtual void GiveAbilities();
+//    UPROPERTY(BlueprintReadOnly, EditDefaultOnly, Category = "GAS")
+//        TArray<TSubclassOf<class UGAS_GameplayAbility>> DefaultAbilities;
 };
