@@ -1,0 +1,18 @@
+Boar\\%2%Eye\\%1%Tail\\%5%Tooth
+Energy Drink\\%3%Water Ball\%3%Blue Liquid
+Poison\\%1%Water ball\\%4%Yellow Liquid
+Magic Potion\\%1%Poison\%1%Energy drink
+Heart\\%4%Spice\\%1%Boar
+Crab\\%3%Horn\\%1%Tooth
+Mace\\%4%Alloy\\%2%Wood
+Magic Flute\\%2%Bamboo\\%3%Ring
+Lock Pick\\%4%Horn\\%2%Shell
+Bomb\\%1%Gun Powder\\%1%Iron
+Fork\\%2%Iron\\%1%Blue Shard
+Pipe\\%3%Stick\\%1%Blue Tail
+Sickle\\%1%Iron\\%1%Wood\\%3%Alloy
+Amulet\\%2%Red Ribbon\\%2%Green Shard\\%4%Iron
+Flash Bomb\\%1%Gun Powder\\%1%Iron\\%2%Flash Wing
+Fire Bomb\\%1%Gun Powder\\%1%Iron\\%2%Red Shard
+Evil Drum\\%2%Alloy\\%3%Wood\\%1%Brain\\%1%Yellow Feather
+Death Necklace\\%2%Tail\\%4%Tooth\\%1%Brown Cloth
