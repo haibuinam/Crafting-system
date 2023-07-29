@@ -43,7 +43,7 @@ void UOption_OfVerticalList_WC::SynchronizeProperties()
     this->SetVisibility(ESlateVisibility::Visible);
 
     // set the display to Desire On Screen
-    this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
+    //this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
 }
 
 void UOption_OfVerticalList_WC::InitOption_OfVerticalList_Widget()

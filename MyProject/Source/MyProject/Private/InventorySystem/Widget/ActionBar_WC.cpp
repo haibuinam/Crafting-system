@@ -48,7 +48,7 @@ void UActionBar_WC::SynchronizeProperties()
     this->SetVisibility(ESlateVisibility::Visible);
 
     // set the display to Desire On Screen
-    this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
+    //this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
 
     // get the total number of actions for index assignment in the for reference
     NumOfActions = UniformGridPanelMaxRow * UniformGridPanelMaxCol;

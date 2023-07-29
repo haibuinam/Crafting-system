@@ -14,7 +14,7 @@ void UActionSlot_WC::NativeOnInitialized()
 
     Visibility = ESlateVisibility::Visible;
 
-    DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
+    //DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
 
     Button->SetClickMethod(EButtonClickMethod::PreciseClick);
     Button->IsFocusable = false;

@@ -70,7 +70,7 @@ void UInventory_W::SynchronizeProperties()
         this->SetVisibility(ESlateVisibility::Visible);
 
         // set the display to Desire On Screen
-        this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
+        //this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
 
         // this only for later reference from other widgets or for your own sake
         NumOfSlot = InventoryBoxMaxRow * InventoryBoxMaxCol;

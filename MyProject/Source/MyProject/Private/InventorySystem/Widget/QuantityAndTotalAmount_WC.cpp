@@ -30,7 +30,7 @@ void UQuantityAndTotalAmount_WC::SynchronizeProperties()
     this->SetVisibility(ESlateVisibility::Visible);
 
     // set the display to Desire On Screen
-    this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
+    //this->DesignSizeMode = EDesignPreviewSizeMode::DesiredOnScreen;
 }
 
 void UQuantityAndTotalAmount_WC::InitQuantityAndTotalAmount()
